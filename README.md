@@ -1,6 +1,6 @@
 # web-scraping-challenge
-Homework 10
-APP
+## Homework 10
+APP: 
 rober@DESKTOP-Q2UPQVR MINGW64 ~/GitHub/web-scraping-challenge (main)
 $ python app.py
  * Serving Flask app "app" (lazy loading)
@@ -13,5 +13,5 @@ $ python app.py
  * Debugger PIN: 136-198-092
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-HTML
+HTML: 
 C:\Users\rober\GitHub\web-scraping-challenge\templates\index.html
