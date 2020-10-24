@@ -5,29 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
-  <!-- Bootstrap CSS -->
+
+    <!-----------------------------------------------
+    Bootstrap CSS -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head> 
-<body class="text-black" style="background-color: black;">
+<body class="text-black" style="background-color: gray;">
     <div class="container">
-        <!-- Jumbotron -->
+
+        <!---------------
+        Jumbotron -->
+
         <div class="jumbotron text-center">
             <h1 class="display-3"><b>Mission to Mars</b></h1>
             <p><a class="btn btn-danger btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
         </div>
-        <!-- NASA Mars News -->
+
+        <!------------------------
+        NASA Mars News -->
         <div class="container">
             <div class="row" id="mars-news">
                 <div class="media">
                     <div class="media-body">
                         <h4>Latest Mars News</h4>
                         <h5 style="color: #DC143C">{{mars.news_title}}</h5>
-                        <p style="color: #8B0000">{{mars.news_p}}</p>
+                        <p style="color: black">{{mars.news_p}}</p>
                     </div>
                 </div>
             </div>
-        </div>   
-        <!-- JPL Mars Space Images - Featured Image -->
+        </div>
+
+        <!-- ------------------------------------------
+        JPL Mars Space Images - Featured Image -->
+
         <div class="container">
             <div class="row" id="mars-featured-image">
                 <div class="col-lg-8 col-md-8 col-sm-12">
@@ -35,7 +46,10 @@
                     <!-- If Images are False/None/Non-Existent, Then Default to Error Message -->
                     <img src="{{mars.featured_image | default('static/images/error.png', true) }}" class="img-responsive" style="max-width:100%; max-height: auto;" alt="Mars Featured Image"/>
                 </div>
-                <!-- Mars Weather -->
+
+                <!-----------------------------------
+                Mars Weather -->
+
                 <div class="col-lg-4 col-md-4 col-sm-12" id="mars-weather">
                     <div class="card" style="max-width: 18rem;">
                         <div class="card-body text-white bg-danger">
@@ -43,7 +57,10 @@
                             <p class="card-text">{{mars.weather}}</p>
                         </div>
                     </div>
-                    <!-- Mars Facts -->
+
+                    <!---------------------
+                    Mars Facts -->
+
                     <br>
                     <div class="row" id="mars-facts">
                         <div class="col-md-12">
@@ -54,7 +71,10 @@
                 </div>
             </div>
         </div>
-        <!-- Mars Hemispheres -->
+
+        <!-----------------------------
+        Mars Hemispheres -->
+
         <h4 style="padding-top: 50px; margin-top: 100px; text-align: center;">Mars Hemispheres</h4>
         <div class="card-deck">
             <hr>
@@ -75,7 +95,9 @@
             </div>
         </div>
     </div>
-    <!-- Bootstrap JavaScript -->
+    <!---------------------------------
+    Bootstrap JavaScript -->
+    <!-- <script src =  -->
     <!-- jQuery, Popper.js & Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
