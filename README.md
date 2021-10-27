@@ -1,5 +1,5 @@
 # web-scraping-challenge
-## Homework 10
+
 APP: 
 rober@DESKTOP-Q2UPQVR MINGW64 ~/GitHub/web-scraping-challenge (main)
 $ python app.py
